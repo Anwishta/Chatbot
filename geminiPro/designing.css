@@ -15,10 +15,13 @@
     border-radius: 10px;
 }
 .st-emotion-cache-7ym5gk{
-    border: 2px solid rgba(75, 18, 210, 0.555);
-    color: rgba(75, 18, 210, 0.555);
+    border: 2px solid rgba(75, 18, 210, 0.855);
+    color: rgba(75, 18, 210, 0.855);
 }
 .st-emotion-cache-7ym5gk:hover{
     border: 2px solid black;
     color: black;
+}
+.st-emotion-cache-1gulkj5{
+    background-color: rgba(0, 0, 0, 0.3);
 }
