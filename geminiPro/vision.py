@@ -18,7 +18,7 @@ st.set_page_config(page_title="Image DEMO")
 with open("designing.css") as source_des:
     st.markdown(f"<style>{source_des.read()}</style>", unsafe_allow_html=True)
 
-st.header("Gemini LLM Image Application")
+st.header("Chat with AI")
 rad = st.sidebar.radio("Select", ['image', 'input'])
 # Function to get response
 if rad == 'image':
@@ -42,7 +42,9 @@ if rad == 'image':
         response = get_response(image, "")  # Passing empty string for input_text
         st.subheader("The response is: ")
         st.write(response)
-
+chat = model2.start_chat(history=[])
+# for message in chat.history:
+#   (f'**{message.role}**: {message.parts[0].text}'))
 if rad == 'input':
     def get_response(question):
         response = model2.generate_content(question)
